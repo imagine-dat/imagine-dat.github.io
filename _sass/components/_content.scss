@@ -1,0 +1,30 @@
+main {
+    background: $clr-gray-95;
+    color: $clr-gray-15;
+    // padding: 1.0em;
+    // padding-bottom: 3.0em;
+}
+
+.content {
+    // max-width: $desktop-width;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+    h2 {
+        text-align: left;
+
+        // @include media($desktop) {
+        //     text-align: center;
+        // }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $clr-highlight-alt;
+    }
+}

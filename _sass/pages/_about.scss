@@ -1,0 +1,38 @@
+.intro {
+  background-image: url("/img/imagine_dat_img.png");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 100%;
+}
+
+.about {
+  height: 500px;
+  margin: auto;
+  width: 75%;
+
+  p {
+    color: $clr-eggplant;
+    font-size: 1em;
+    text-align: center;
+
+    strong {
+      font-size: 1.2em;
+    }
+  }
+
+  .join-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    .meetup {
+      width: 200px;
+    }
+
+    .slack {
+      width: 200px;
+    }
+  }
+}

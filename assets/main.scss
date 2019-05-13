@@ -1,0 +1,30 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+@charset 'utf-8';
+
+// // Libraries
+// @import 'normalize.css/normalize';
+// @import 'bourbon/core/bourbon';
+// @import 'bourbon-neat/core/neat';
+
+
+// Defaults
+@import '../_sass/defaults/breakpoints';
+@import '../_sass/defaults/colors';
+@import '../_sass/defaults/tags';
+@import '../_sass/defaults/typography';
+
+
+// Components
+@import '../_sass/components/content';
+@import '../_sass/components/footer';
+@import '../_sass/components/header';
+
+
+// Pages
+@import '../_sass/pages/front';
+@import '../_sass/pages/about';
