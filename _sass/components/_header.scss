@@ -15,10 +15,49 @@ header {
         // padding: 2.0em;
         // text-align: left;
     // }
+    a {
+      .logo {
+        padding: 0.5em;
+        width: 200px;
+      }
+    }
 
-    .logo {
-      padding: 0.5em;
-      width: 50%;
+    .navigation {
+      height: 100%;
+      margin: auto 0;
+      vertical-align: middle;
+      display: flex;
+
+      .nav_link {
+
+        margin-top: 0.3em;
+
+        a {
+          text-decoration: none;
+          color: $clr-gray-40;
+          text-align: center;
+          font-size: 0.8em;
+          letter-spacing: 2px;
+          padding: 0 0.8em;
+          // padding-bottom: 1em;
+
+          .underline {
+            height: 8px;
+            z-index: 0;
+            width: 100px;
+            background-color: transparent;
+            margin: -15px 0 0 1em;
+          }
+        }
+        a:hover {
+          // border-bottom: 5px solid $clr-lime;
+          // // transition: 0.5s ease-in;
+          // transform: translate(20px, -70px);
+          .underline {
+            background-color: $clr-lime;
+          }
+        }
+      }
     }
 
     .in_touch {

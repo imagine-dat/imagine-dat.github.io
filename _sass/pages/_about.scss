@@ -6,6 +6,91 @@
   width: 100%;
 }
 
+.challenge_guide {
+  background-color: $clr-mint;
+  overflow: scroll;
+  width: 100%;
+
+  .card_module {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 3em;
+    text-decoration: none;
+
+    @media (max-width: $phone-width) {
+      flex-direction: column;
+    }
+
+    .card-image {
+      position: relative;
+    }
+
+    .card-image img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      object-fit: cover;
+      object-position: center;
+
+      @media (max-width: $phone-width) {
+        height: 100px;
+      }
+
+    }
+
+    .card_information {
+
+      &:hover {
+        .underline {
+            background-color: #66e6bf;
+        }
+      }
+
+      @media (max-width: $phone-width) {
+        // width: 300px;
+        padding-bottom: 3em;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 100%;
+      }
+
+      background-color: $clr-white;
+      cursor: pointer;
+
+      h3 {
+        color: black;
+        letter-spacing: 0.2em;
+        padding: 4em 5em 0 1em;
+      }
+
+      .description, .link {
+        text-decoration: none;
+        color: $clr-gray-40;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        padding-left: 1em;
+        line-height: 1.3em;
+        z-index: 2;
+      }
+
+      .underline {
+        height: 8px;
+        z-index: 0;
+        width: 100px;
+        background-color: $clr-lime;
+        margin: -25px 0 0 1em;
+      }
+    }
+  }
+}
+
 .about {
   height: 500px;
   margin: auto;
