@@ -1,0 +1,64 @@
+.sidenav {
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $clr-white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: right;
+    white-space: nowrap;
+    padding-top: 0.5em;
+
+    a {
+      float: left;
+      .logo {
+        padding: 0.5em;
+        width: 200px;
+      }
+    }
+
+    .sidenav_links {
+      padding-top: 3em;
+      display: block;
+
+      .sidenav_link {
+
+        margin: 0.3em;
+        padding: 1em;
+        width: 30%;
+
+        a {
+          text-decoration: none;
+          color: $clr-gray-40;
+          font-size: 0.8em;
+          letter-spacing: 2px;
+          padding: 0 0.8em;
+
+          .underline {
+            height: 8px;
+            z-index: 0;
+            width: 10em;
+            background-color: transparent;
+            margin: -15px 0 0 1em;
+          }
+        }
+        a:hover {
+
+          .underline {
+            background-color: $clr-lime;
+          }
+        }
+      }
+    }
+}
+
+.sidenav_slideIn {
+    width: 100%;
+}
+
+.sidenav_slideOut {
+    width: 0;
+}

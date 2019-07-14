@@ -1,0 +1,11 @@
+- text: Home
+  url: /
+
+- text: Challenge Guide
+  url: /challenge_guide/
+
+- text: Past Challenges
+  url: /past_challenges/
+
+- text: Contact Us
+  url: mailto:dyt.imagine.dat@gmail.com
