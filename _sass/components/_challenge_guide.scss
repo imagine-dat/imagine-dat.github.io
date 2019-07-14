@@ -1,0 +1,55 @@
+.content {
+  .divider {
+    height: 15px;
+    background-color: $clr-mint;
+    width: 100%;
+  }
+
+  .divider2 {
+    height: 1px;
+    margin: auto;
+    background-color: $clr-lime;
+    width: 90%;
+  }
+
+  .title {
+    padding: 1.5em;
+
+    h3 {
+      color: black;
+      letter-spacing: 0.2em;
+    }
+
+    .description {
+      text-decoration: none;
+      color: $clr-gray-40;
+      font-size: 0.8em;
+      letter-spacing: 2px;
+      line-height: 1.3em;
+      z-index: 2;
+    }
+  }
+
+  .text_area {
+    text-align: center;
+    margin: auto;
+    padding: 1em 0;
+    width: 80%;
+
+    .question {
+      color: black;
+      font-weight: bolder;
+      padding-top: 1.2em;
+    }
+
+    .answer {
+      font-size: 0.8em;
+      line-height: 25px;
+    }
+
+    .expanded_answer {
+      padding: 1.5em 0;
+    }
+
+  }
+}
