@@ -12,11 +12,39 @@ layout: home
         <img src="/img/challenge_guide_img.png" class="fade-in loaded" data-visible="true">
       </div>
       <div class="card_information">
-        <h3>BE PART OF THE CHALLENGE</h3>
+        <h3 class="section-title">BE PART OF THE CHALLENGE</h3>
         <p class="description">WE MEET ONCE EVERY TWO MONTHS</p>
         <p class="link">READ MORE</p>
         <div class="underline"></div>
       </div>
     </a>
   </div>
+
+  <div class="PastChallenge">
+    <h2 class="PastChallenge__header section-title">Past Challenges & Other News</h2>
+    <ul class="PastChallenge__list">
+      {% for blog in site.posts and counter < '3' %}
+      <li class="PastChallenge__item">
+
+        <div class="PastChallenge__item-container">
+          <div class="PastChallenge__item-featImg" {% if blog.featureImg %} style="background-image: url('{{ blog.featureImg }}');" {% endif %}
+          ></div>
+          <img class="PastChallenge__item-featImg" src="{{blog.featureImg}}">
+          <a href="#">
+          <h3 class="PastChallenge__item-title">
+            {{blog.title}}
+          </h3>
+          <div class="underline"></div>
+        </a>
+          
+        </div>
+
+      </li>
+      {% endfor %}
+    </ul>
+    
+  </div>
+
+
+
 </div>
