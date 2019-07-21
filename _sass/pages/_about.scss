@@ -1,3 +1,9 @@
+.section-title {
+  color: black;
+  letter-spacing: 0.2em;
+  padding: 4em 5em 0 1em;
+}
+
 .intro {
   background-image: url("/img/imagine_dat_img.png");
   background-size: cover;
@@ -5,21 +11,25 @@
   height: 350px;
   width: 100%;
 }
-
+.content{
+  display: flex;
+  flex-direction: column;
 .challenge_guide {
   background-color: $clr-mint;
+  display: flex;
+  flex:1;
+  justify-content: center;
   overflow: scroll;
   width: 100%;
 
   .card_module {
     display: flex;
     flex-direction: row-reverse;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 3em;
+    max-width: 80%;
+    padding: 1.5em 0;
     text-decoration: none;
 
-    @media (max-width: $phone-width) {
+    @media (max-width: $phone-horizontal-width) {
       flex-direction: column;
     }
 
@@ -35,7 +45,7 @@
       object-fit: cover;
       object-position: center;
 
-      @media (max-width: $phone-width) {
+      @media (max-width: $phone-horizontal-width) {
         height: 100px;
       }
 
@@ -49,7 +59,7 @@
         }
       }
 
-      @media (max-width: $phone-width) {
+      @media (max-width: $phone-horizontal-width) {
         // width: 300px;
         padding-bottom: 3em;
       }
@@ -64,11 +74,7 @@
       background-color: $clr-white;
       cursor: pointer;
 
-      h3 {
-        color: black;
-        letter-spacing: 0.2em;
-        padding: 4em 5em 0 1em;
-      }
+     
 
       .description, .link {
         text-decoration: none;
@@ -121,3 +127,74 @@
     }
   }
 }
+
+.PastChallenge{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  flex:1;
+
+  &__header{
+    @extend .section-title;
+    color: black !important;
+    padding: 1em 5em 0 1em;
+    text-transform: uppercase;
+    @media (max-width: $phone-horizontal-width) {
+      font-size: .9em;
+      padding: 1em 0 0 0;
+    }
+    
+  }
+
+
+  &__list{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    @media (max-width: $phone-horizontal-width) {
+      flex-direction: column;
+    }
+
+  }
+
+  &__item{
+    margin: 0 1em 1em 1em;
+
+    &-container{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      max-width: 12em;
+      text-align: left;
+      >a{
+        text-decoration: none;
+        .underline {
+          background-color:transparent;
+          height: .5em;
+          margin: -1.35em 0 0 .25em;
+      }
+        &:hover {
+          .underline {
+              background-color: $clr-lime;
+          }
+        }
+      }
+    }
+
+    &-title{
+      color: $clr-gray-40 !important;
+      font-size: .9em;
+      font-weight: normal !important;
+      text-transform: uppercase;
+    }
+
+    &-featImg{
+      max-width: 8em;
+      margin-bottom: .75em;
+    }
+  }
+
+}
+}
+

@@ -1,0 +1,83 @@
+.Past_Challenge{
+
+    &__list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    }
+
+    
+
+    &__item{
+        margin: 1em 0 0 1em;
+        height: 100%;
+
+        &-container{
+            display: flex;
+            flex-direction: row;
+            height: 6em;
+
+            @media (max-width: $phone-horizontal-width) {
+              flex-direction: column;
+              height: 8em;
+            }
+        }
+
+        &-excerpt{
+          >a{
+            text-decoration: none;
+            width: 30%;
+            @media (max-width: $phone-horizontal-width) {
+              width: 90%;
+            }
+            .underline {
+              width: inherit;
+              background-color:transparent;
+              height: .5em;
+              margin: -1.35em 0 0 .25em;
+          }
+            &:hover {
+              .underline {
+                  background-color: $clr-lime;
+              }
+            }
+          }
+          @media (max-width: $phone-horizontal-width) {
+              overflow: hidden;
+          }
+
+        }
+        &-text{
+          font-size: 0.8em;
+          line-height: 25px;
+          margin: .5em 2em .5em 0;
+          @media (max-width: $phone-horizontal-width) {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+          }
+          
+        }
+
+        &-title{
+            color: $clr-gray-40 !important;
+            font-size: .9em;
+            font-weight: normal !important;
+            text-transform: uppercase;
+          }
+
+        &-featImg{
+            max-width: 8em;
+            margin: 0 1em .75em 0;
+
+            @media (max-width: $phone-horizontal-width) {
+              margin: 0 auto;
+              max-width: 50%;
+
+            }
+
+        }
+    }
+
+   
+}

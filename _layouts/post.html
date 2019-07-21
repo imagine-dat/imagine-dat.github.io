@@ -1,4 +1,26 @@
-<div>
-    <h1>WEEEEEEEEEEEEE</h1>
-    {{content}}
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+<body>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        {% include svgsprites.html %}
+        
+        {% include header.html %}
+<div class="Blog">
+    <div class="Blog__header">
+        <div class="Blog__header-imgContainer">
+            <img class="Blog__header-img" src="{{page.featureImg}}" >
+        </div>
+        <div class="Blog__header-titleContainer">
+            <h1 class="Blog__header-title">{{page.title}}</h1>
+            <div class="Blog__header-underline"></div>
+        </div>
+    </div>
+    <div class="Blog__content">
+            {{content}}
+    </div>
+    
 </div>
+</body>
+{% include footer.html %}
+</html>
