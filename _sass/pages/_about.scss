@@ -29,7 +29,7 @@
     padding: 1.5em 0;
     text-decoration: none;
 
-    @media (max-width: $phone-width) {
+    @media (max-width: $phone-horizontal-width) {
       flex-direction: column;
     }
 
@@ -45,7 +45,7 @@
       object-fit: cover;
       object-position: center;
 
-      @media (max-width: $phone-width) {
+      @media (max-width: $phone-horizontal-width) {
         height: 100px;
       }
 
@@ -59,7 +59,7 @@
         }
       }
 
-      @media (max-width: $phone-width) {
+      @media (max-width: $phone-horizontal-width) {
         // width: 300px;
         padding-bottom: 3em;
       }
@@ -140,6 +140,10 @@
     color: black !important;
     padding: 1em 5em 0 1em;
     text-transform: uppercase;
+    @media (max-width: $phone-horizontal-width) {
+      font-size: .9em;
+      padding: 1em 0 0 0;
+    }
     
   }
 
@@ -148,6 +152,9 @@
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    @media (max-width: $phone-horizontal-width) {
+      flex-direction: column;
+    }
 
   }
 
@@ -158,6 +165,8 @@
       align-items: center;
       display: flex;
       flex-direction: column;
+      max-width: 12em;
+      text-align: left;
       >a{
         text-decoration: none;
         .underline {

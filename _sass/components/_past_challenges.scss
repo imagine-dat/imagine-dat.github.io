@@ -16,12 +16,20 @@
             display: flex;
             flex-direction: row;
             height: 6em;
+
+            @media (max-width: $phone-horizontal-width) {
+              flex-direction: column;
+              height: 8em;
+            }
         }
 
         &-excerpt{
           >a{
             text-decoration: none;
             width: 30%;
+            @media (max-width: $phone-horizontal-width) {
+              width: 90%;
+            }
             .underline {
               width: inherit;
               background-color:transparent;
@@ -34,12 +42,20 @@
               }
             }
           }
+          @media (max-width: $phone-horizontal-width) {
+              overflow: hidden;
+          }
 
         }
         &-text{
           font-size: 0.8em;
           line-height: 25px;
           margin: .5em 2em .5em 0;
+          @media (max-width: $phone-horizontal-width) {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+          }
           
         }
 
@@ -53,6 +69,12 @@
         &-featImg{
             max-width: 8em;
             margin: 0 1em .75em 0;
+
+            @media (max-width: $phone-horizontal-width) {
+              margin: 0 auto;
+              max-width: 50%;
+
+            }
 
         }
     }

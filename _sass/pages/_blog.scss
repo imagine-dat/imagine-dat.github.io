@@ -1,6 +1,9 @@
+
+
 .Blog{
   overflow: auto;
   padding-bottom: 3em;
+  
     
   &__header{
     &-imgContainer{
@@ -25,6 +28,11 @@
         position: absolute;
         top: 0;
         z-index: 2;
+        @media (max-width: $phone-horizontal-width) {
+          font-size: 1em;
+          left: 1em;
+        }
+        
     }
     &-underline{
         background-color: $clr-lime;
@@ -44,6 +52,10 @@
     margin: 3em auto 0 auto;
     overflow: auto;
     width:50%;
+
+    @media (max-width: $phone-horizontal-width) {
+      width:80%;
+    }
   }
 
 }

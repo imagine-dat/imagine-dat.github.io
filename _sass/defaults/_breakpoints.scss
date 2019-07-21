@@ -4,4 +4,5 @@ $desktop-width: 1024px;
 $desktop: new-breakpoint(min-width $desktop-width);
 
 $tablet-width: 992px;
-$phone-width: 767px;
+$phone-horizontal-width: 767px;
+$phone-vertical-width-sm: 415px;

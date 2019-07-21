@@ -30,7 +30,7 @@
         padding: 1em;
         width: 30%;
 
-        a {
+        &__guide{
           text-decoration: none;
           color: $clr-gray-40;
           font-size: 0.8em;
@@ -44,13 +44,37 @@
             background-color: transparent;
             margin: -15px 0 0 1em;
           }
+          &:hover {
+
+            .underline {
+              background-color: $clr-lime;
+            }
+          }
+
         }
-        a:hover {
+        &__past{
+          text-decoration: none;
+          color: $clr-gray-40;
+          font-size: 0.8em;
+          letter-spacing: 2px;
+          padding: 0 0.8em;
 
           .underline {
-            background-color: $clr-lime;
+            height: 8px;
+            z-index: 0;
+            width: 17em;
+            background-color: transparent;
+            margin: -15px 0 0 1em;
           }
+          &:hover {
+
+            .underline {
+              background-color: $clr-lime;
+            }
+          }
+
         }
+        
       }
     }
 }
