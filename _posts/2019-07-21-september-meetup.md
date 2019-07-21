@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Upcoming Meetup, Visualize & Vocalize: Fitness"
+title:  "Upcoming Meetup: Visualize & Vocalize: Fitness"
 date:   2019-07-17 22:00:00 -0400
 featureImg: https://i.postimg.cc/L5kBfDwN/Screen-Shot-2019-07-21-at-10-27-08-AM.png
 categories: Challenges
