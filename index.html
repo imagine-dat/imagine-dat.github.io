@@ -27,10 +27,9 @@ layout: home
       <li class="PastChallenge__item">
 
         <div class="PastChallenge__item-container">
-          <div class="PastChallenge__item-featImg" {% if blog.featureImg %} style="background-image: url('{{ blog.featureImg }}');" {% endif %}
-          ></div>
+          
           <img class="PastChallenge__item-featImg" src="{{blog.featureImg}}">
-          <a href="#">
+          <a href="{{ blog.url }}">
           <h3 class="PastChallenge__item-title">
             {{blog.title}}
           </h3>

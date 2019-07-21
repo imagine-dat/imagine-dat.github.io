@@ -1,0 +1,49 @@
+.Blog{
+  overflow: auto;
+  padding-bottom: 3em;
+    
+  &__header{
+    &-imgContainer{
+        max-height: 16em;
+        overflow: hidden;
+        opacity: .9;
+    }
+
+    &-img{
+        width: 100%;
+    }
+
+    &-titleContainer{
+        margin-left: 1em;
+        position: relative;
+    }
+
+    &-title{
+        color: $clr-dark;
+        left: 8em;
+        margin: -.85em 0 1em 0;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+    }
+    &-underline{
+        background-color: $clr-lime;
+        height: 1.6em;
+        position: absolute;
+        top: -1em;
+        width: 100%;
+        z-index: 1;
+       
+    }
+
+  }
+
+  &__content{
+    font-size: 0.8em;
+    line-height: 25px;
+    margin: 3em auto 0 auto;
+    overflow: auto;
+    width:50%;
+  }
+
+}
