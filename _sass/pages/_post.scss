@@ -1,0 +1,19 @@
+.Post{
+    &__images{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 1em auto;
+
+    }
+
+    &__img{
+        object-fit: cover;
+       
+    }
+
+   
+}
+.rotate{
+    transform: rotate(90deg);
+}
