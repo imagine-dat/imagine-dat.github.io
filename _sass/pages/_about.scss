@@ -5,196 +5,189 @@
 }
 
 .intro {
-  background-image: url("/img/imagine_dat_img.png");
+  background-image: url('/img/imagine_dat_img.png');
   background-size: cover;
   background-position: center;
   height: 350px;
   width: 100%;
 }
-.content{
+.content {
   display: flex;
   flex-direction: column;
-.challenge_guide {
-  background-color: $clr-mint;
-  display: flex;
-  flex:1;
-  justify-content: center;
-  overflow: scroll;
-  width: 100%;
 
-  .card_module {
+  .challenge_guide {
+    background-color: $clr-mint;
     display: flex;
-    flex-direction: row-reverse;
-    max-width: 80%;
-    padding: 1.5em 0;
-    text-decoration: none;
+    flex: 1;
+    justify-content: center;
+    overflow: auto;
+    width: 100%;
 
-    @media (max-width: $phone-horizontal-width) {
-      flex-direction: column;
-    }
-
-    .card-image {
-      position: relative;
-    }
-
-    .card-image img{
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin: 0;
-      object-fit: cover;
-      object-position: center;
+    .card_module {
+      display: flex;
+      flex-direction: row-reverse;
+      max-width: 80%;
+      padding: 1.5em 0;
+      text-decoration: none;
 
       @media (max-width: $phone-horizontal-width) {
-        height: 100px;
+        flex-direction: column;
       }
 
-    }
+      .card-image {
+        position: relative;
+      }
 
-    .card_information {
+      .card-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        object-fit: cover;
+        object-position: center;
 
-      &:hover {
-        .underline {
-            background-color: #66e6bf;
+        @media (max-width: $phone-horizontal-width) {
+          height: 100px;
         }
       }
 
-      @media (max-width: $phone-horizontal-width) {
-        // width: 300px;
-        padding-bottom: 3em;
-      }
-
-      @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        width: 100%;
-      }
-
-      background-color: $clr-white;
-      cursor: pointer;
-
-     
-
-      .description, .link {
-        text-decoration: none;
-        color: $clr-gray-40;
-        font-size: 0.8em;
-        letter-spacing: 2px;
-        padding-left: 1em;
-        line-height: 1.3em;
-        z-index: 2;
-      }
-
-      .underline {
-        height: 8px;
-        z-index: 0;
-        width: 100px;
-        background-color: $clr-lime;
-        margin: -25px 0 0 1em;
-      }
-    }
-  }
-}
-
-.about {
-  height: 500px;
-  margin: auto;
-  width: 75%;
-
-  p {
-    color: $clr-eggplant;
-    font-size: 1em;
-    text-align: center;
-
-    strong {
-      font-size: 1.2em;
-    }
-  }
-
-  .join-us {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-
-    .meetup {
-      width: 200px;
-    }
-
-    .slack {
-      width: 200px;
-    }
-  }
-}
-
-.PastChallenge{
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width:100%;
-  flex:1;
-
-  &__header{
-    @extend .section-title;
-    color: black !important;
-    padding: 1em 5em 0 1em;
-    text-transform: uppercase;
-    @media (max-width: $phone-horizontal-width) {
-      font-size: .9em;
-      padding: 1em 0 0 0;
-    }
-    
-  }
-
-
-  &__list{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    @media (max-width: $phone-horizontal-width) {
-      flex-direction: column;
-    }
-
-  }
-
-  &__item{
-    margin: 0 1em 1em 1em;
-
-    &-container{
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      max-width: 12em;
-      text-align: left;
-      >a{
-        text-decoration: none;
-        .underline {
-          background-color:transparent;
-          height: .5em;
-          margin: -1.35em 0 0 .25em;
-      }
+      .card_information {
         &:hover {
           .underline {
+            background-color: #66e6bf;
+          }
+        }
+
+        @media (max-width: $phone-horizontal-width) {
+          // width: 300px;
+          padding-bottom: 3em;
+        }
+
+        @media (min-width: $tablet-width) {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          width: 100%;
+        }
+
+        background-color: $clr-white;
+        cursor: pointer;
+
+        .description,
+        .link {
+          text-decoration: none;
+          color: $clr-gray-40;
+          font-size: 0.8em;
+          letter-spacing: 2px;
+          padding-left: 1em;
+          line-height: 1.3em;
+          z-index: 2;
+        }
+
+        .underline {
+          height: 8px;
+          z-index: 0;
+          width: 100px;
+          background-color: $clr-lime;
+          margin: -25px 0 0 1em;
+        }
+      }
+    }
+  }
+
+  .about {
+    height: 500px;
+    margin: auto;
+    width: 75%;
+
+    p {
+      color: $clr-eggplant;
+      font-size: 1em;
+      text-align: center;
+
+      strong {
+        font-size: 1.2em;
+      }
+    }
+
+    .join-us {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+
+      .meetup {
+        width: 200px;
+      }
+
+      .slack {
+        width: 200px;
+      }
+    }
+  }
+
+  .PastChallenge {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+
+    &__header {
+      @extend .section-title;
+      color: black !important;
+      padding: 1em 5em 0 1em;
+      text-transform: uppercase;
+      @media (max-width: $phone-horizontal-width) {
+        font-size: 0.9em;
+        padding: 1em 0 0 0;
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      @media (max-width: $phone-horizontal-width) {
+        flex-direction: column;
+      }
+    }
+
+    &__item {
+      margin: 0 1em 1em 1em;
+
+      &-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 12em;
+        text-align: left;
+        > a {
+          text-decoration: none;
+          .underline {
+            background-color: transparent;
+            height: 0.5em;
+            margin: -1.35em 0 0 0.25em;
+          }
+          &:hover {
+            .underline {
               background-color: $clr-lime;
+            }
           }
         }
       }
-    }
 
-    &-title{
-      color: $clr-gray-40 !important;
-      font-size: .9em;
-      font-weight: normal !important;
-      text-transform: uppercase;
-    }
+      &-title {
+        color: $clr-gray-40 !important;
+        font-size: 0.9em;
+        font-weight: normal !important;
+        text-transform: uppercase;
+      }
 
-    &-featImg{
-      max-width: 8em;
-      margin-bottom: .75em;
+      &-featImg {
+        max-width: 8em;
+        margin-bottom: 0.75em;
+      }
     }
   }
-
 }
-}
-

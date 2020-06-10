@@ -1,101 +1,66 @@
 // Header component on the front page
 header {
-    background-color: white;
-    background-size: cover;
-    color: $clr-white;
-    display: flex;
-    justify-content: space-between;
-    left: 0;
-    padding-top: 0.5em;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+  background-color: white;
+  background-size: cover;
+  color: $clr-white;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding-top: 0.5em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 
-    a {
-      .logo {
-        padding: 0.5em;
-        width: 200px;
-      }
+  a {
+    .logo {
+      padding: 0.5em;
+      width: 200px;
+    }
+  }
+
+  .navigation {
+    height: 100%;
+    margin: auto 0;
+    vertical-align: middle;
+    display: none;
+    // padding-top: 0.5em;
+    @media (min-width: $desktop-width) {
+      display: flex;
     }
 
-    .navigation {
-      height: 100%;
-      margin: auto 0;
-      vertical-align: middle;
-      display: none;
-      // padding-top: 0.5em;
-      @media (min-width: $desktop-width) {
-        display: flex;
+    .nav_link {
+      margin: 0.3em 0.5em 0 0;
+      min-width: 10rem;
+      width: 11rem;
+
+      a {
+        text-decoration: none;
+        color: $clr-gray-40;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        padding: 0 0.8em;
+        min-width: 11rem;
+
+        &:hover {
+          .underline {
+            visibility: visible;
+          }
+        }
       }
-
-      .nav_link {
-
-        margin-top: 0.3em;
-        &__guide{
-          text-decoration: none;
-          color: $clr-gray-40;
-          font-size: 0.8em;
-          letter-spacing: 2px;
-          padding: 0 0.8em;
-
-          .underline {
-            height: 8px;
-            z-index: 0;
-            width: 10em;
-            background-color: transparent;
-            margin: -15px 0 0 1em;
-          }
-          &:hover {
-
-            .underline {
-              background-color: $clr-lime;
-            }
-          }
-
-        }
-        &__past{
-          text-decoration: none;
-          color: $clr-gray-40;
-          font-size: 0.8em;
-          letter-spacing: 2px;
-          padding: 0 0.8em;
-
-          .underline {
-            height: 8px;
-            z-index: 0;
-            width: 8.5em;
-            background-color: transparent;
-            margin: -15px 0 0 1em;
-          }
-          &:hover {
-
-            .underline {
-              background-color: $clr-lime;
-            }
-          }
-
-        }
+      .underline {
+        visibility: hidden;
+        height: 8px;
+        z-index: 0;
+        width: inherit;
+        background-color: $clr-lime;
+        margin: -15px 0 0 1em;
       }
     }
+  }
 
-    // .in_touch {
-    //   display: flex;
-    //   flex-direction: row-reverse;
-    //   padding-right: 1em;
-    //
-    //   .icon {
-    //     width: 20px;
-    //     height: 20px;
-    //     fill: $clr-eggplant;
-    //     padding: 0.3em;
-    //     margin-top: 0;
-    //     vertical-align: middle;
-    //   }
-    // }
-
-    #nav_hamburger {
+  #nav_hamburger {
     cursor: pointer;
     display: inline-block;
     padding-right: 1em;
@@ -107,45 +72,43 @@ header {
     }
 
     .bar {
-        width: 30px;
-        height: 3px;
-        margin: 6px 0;
-        border-radius: 50px;
-        background-color: $clr-eggplant;
-        transition: all ease-in-out 200ms;
+      width: 30px;
+      height: 3px;
+      margin: 6px 0;
+      border-radius: 50px;
+      background-color: $clr-eggplant;
+      transition: all ease-in-out 200ms;
     }
 
     // Default three lines hamburger menu
     .bar_top {
-        top: 0px;
+      top: 0px;
     }
 
     .bar_middle {
-        top: 18px;
+      top: 18px;
     }
 
     .bar_bottom {
-        top: 36px;
+      top: 36px;
     }
-}
+  }
 
-.nav_hamburger-close {
-
+  .nav_hamburger-close {
     // X close button by hidding the middle bar and rotating the top & bottom bars
     .bar_top {
-        background: $clr-eggplant;
-        transform: rotate(45deg) translate(8px, 7px);
+      background: $clr-eggplant;
+      transform: rotate(45deg) translate(8px, 7px);
     }
 
     .bar_middle {
-        opacity: 0;
-        transition: all ease-in-out 200ms;
+      opacity: 0;
+      transition: all ease-in-out 200ms;
     }
 
     .bar_bottom {
-        background: $clr-eggplant;
-        transform: rotate(-45deg) translate(7px, -7px);
+      background: $clr-eggplant;
+      transform: rotate(-45deg) translate(7px, -7px);
     }
-}
-
+  }
 }

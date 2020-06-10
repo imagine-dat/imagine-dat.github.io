@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minima";
+@import 'minima';
 
 @charset 'utf-8';
 
@@ -11,13 +11,11 @@
 // @import 'bourbon/core/bourbon';
 // @import 'bourbon-neat/core/neat';
 
-
 // Defaults
 @import '../_sass/defaults/breakpoints';
 @import '../_sass/defaults/colors';
 @import '../_sass/defaults/tags';
 @import '../_sass/defaults/typography';
-
 
 // Components
 @import '../_sass/components/content';
@@ -27,9 +25,12 @@
 @import '../_sass/components/challenge_guide';
 @import '../_sass/components/past_challenges';
 
-
 // Pages
 @import '../_sass/pages/front';
 @import '../_sass/pages/about';
 @import '../_sass/pages/blog';
 @import '../_sass/pages/post';
+
+body {
+  overflow-x: hidden;
+}
