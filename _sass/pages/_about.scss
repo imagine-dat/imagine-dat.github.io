@@ -79,7 +79,7 @@
           color: $clr-gray-40;
           font-size: 0.8em;
           letter-spacing: 2px;
-          padding-left: 1em;
+          padding-left: 1.5em;
           line-height: 1.3em;
           z-index: 2;
         }
@@ -140,7 +140,7 @@
       text-transform: uppercase;
       @media (max-width: $phone-horizontal-width) {
         font-size: 0.9em;
-        padding: 1em 0 0 0;
+        padding: 3em 0 0 0;
       }
     }
 
@@ -148,19 +148,19 @@
       display: flex;
       justify-content: space-evenly;
       list-style: none;
+      margin: 0;
       @media (max-width: $phone-horizontal-width) {
         flex-direction: column;
       }
     }
 
     &__item {
-      margin: 0 1em 1em 1em;
+      margin: 0 1em 3em 1em;
 
       &-container {
         align-items: center;
         display: flex;
         flex-direction: column;
-        max-width: 12em;
         text-align: left;
         > a {
           text-decoration: none;
@@ -187,6 +187,11 @@
       &-featImg {
         max-width: 8em;
         margin-bottom: 0.75em;
+
+        @media (max-width: $phone-horizontal-width) {
+          flex-direction: column;
+          max-width: 17em;
+        }
       }
     }
   }
