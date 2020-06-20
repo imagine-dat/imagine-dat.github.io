@@ -136,7 +136,7 @@
     &__header {
       @extend .section-title;
       color: black !important;
-      padding: 1em 5em 0 1em;
+      padding: 1em;
       text-transform: uppercase;
       @media (max-width: $phone-horizontal-width) {
         font-size: 0.9em;
@@ -179,18 +179,25 @@
 
       &-title {
         color: $clr-gray-40 !important;
-        font-size: 0.9em;
+        font-size: 0.7em;
         font-weight: normal !important;
         text-transform: uppercase;
+        text-align: center;
+
+        @media (max-width: $phone-horizontal-width) {
+          font-size: 0.9em;
+        }
       }
 
       &-featImg {
         max-width: 8em;
         margin-bottom: 0.75em;
+        height: 6em;
 
         @media (max-width: $phone-horizontal-width) {
           flex-direction: column;
           max-width: 17em;
+          height: 10em;
         }
       }
     }
