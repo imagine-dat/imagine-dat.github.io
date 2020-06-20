@@ -53,7 +53,7 @@
 
       .card_information {
         &:hover {
-          .underline {
+          .card-info-underline {
             background-color: #66e6bf;
           }
         }
@@ -84,7 +84,7 @@
           z-index: 2;
         }
 
-        .underline {
+        .card-info-underline {
           height: 8px;
           z-index: 0;
           width: 200px;

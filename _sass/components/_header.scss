@@ -26,37 +26,37 @@ header {
     vertical-align: middle;
     display: none;
     // padding-top: 0.5em;
+    margin: 0 0.5em;
     @media (min-width: $desktop-width) {
       display: flex;
     }
 
-    .nav_link {
-      margin: 0.3em 0.5em 0 0;
-      min-width: 10rem;
-      width: 11rem;
+    .nav_link_wrapper {
+      margin: 0.3em 0.5em 0 0.5em;
 
-      a {
-        text-decoration: none;
+      .nav_link {
         color: $clr-gray-40;
         font-size: 0.8em;
         letter-spacing: 2px;
-        padding: 0 0.8em;
-        min-width: 11rem;
-
+        text-align: center;
+        text-decoration: none;
+  
         &:hover {
           .underline {
             visibility: visible;
           }
         }
+
+        .underline {
+          visibility: hidden;
+          height: 8px;
+          z-index: 0;
+          width: inherit;
+          background-color: $clr-lime;
+          margin: -15px 0 0 0;
+        }
       }
-      .underline {
-        visibility: hidden;
-        height: 8px;
-        z-index: 0;
-        width: inherit;
-        background-color: $clr-lime;
-        margin: -15px 0 0 1em;
-      }
+
     }
   }
 
