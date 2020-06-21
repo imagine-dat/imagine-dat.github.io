@@ -66,21 +66,22 @@
             font-size: .9em;
             font-weight: normal !important;
             text-transform: uppercase;
-            text-align: center;
           }
 
-        &-featImg{
-            max-width: 8em;
-            margin: 0 1em .75em 0;
-
-            @media (max-width: $phone-horizontal-width) {
-              margin: 0 auto;
-              max-width: 80%;
-
-            }
-
-        }
     }
 
    
+}
+
+.featImg{
+  max-width: 20%;
+  height: auto;
+  margin: 0 1em .75em 0;
+
+  @media (max-width: $phone-horizontal-width) {
+    margin: 0 auto;
+    max-width: 80%;
+
+  }
+
 }
