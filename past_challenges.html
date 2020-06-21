@@ -9,7 +9,11 @@ permalink: /past_challeges/
     {% for blog in site.posts%}
     <li class="Past_Challenge__item">
       <div class="Past_Challenge__item-container">
-        <img class="featImg " src="{{blog.featureImg}}" />
+        <div class="image_container">
+          <section>
+            <img class="featImg " src="{{blog.featureImg}}" />
+          </section>
+        </div>
         <div class="Past_Challenge__item-excerpt">
           <a href="{{ blog.url }}">
             <h3 class="Past_Challenge__item-title">

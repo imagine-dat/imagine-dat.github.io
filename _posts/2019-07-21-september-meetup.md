@@ -2,7 +2,7 @@
 layout: post
 title:  "Upcoming Meetup: Visualize & Vocalize: Fitness"
 date:   2019-07-17 22:00:00 -0400
-featureImg: https://i.postimg.cc/L5kBfDwN/Screen-Shot-2019-07-21-at-10-27-08-AM.png
+featureImg: /img/blog-07-17-cover.png
 categories: Challenges
 excerpt:  "Whether you want to be apart of the challenge or just come to talk about your ideas with people of like minds, we'd love to have you!  We'd also like to hear about what you'd like to have planned for future events, so please come and talk to us..."
 ---
