@@ -74,13 +74,13 @@
 }
 
 .featImg{
-  max-width: 20%;
-  height: auto;
+  width: 20%;
+  height: auto !important;
   margin: 0 1em .75em 0;
 
   @media (max-width: $phone-horizontal-width) {
     margin: 0 auto;
-    max-width: 80%;
+    width: 80%;
 
   }
 
