@@ -32,21 +32,26 @@
     <div class="bar bar_bottom"></div>
   </div>
   <div class="sidenav">
-    <a href="/"><img class="logo" src="/img/imagine.dat_logo.png" /></a>
+    <div class="sidenv_logo">
+      <a href="/"><img class="logo" src="/img/imagine.dat_logo.png" /></a>
+    </div>
 
     <div class="sidenav_links">
-      <div class="sidenav_link">
+
+        <a class="sidenav_link" href="{% link  about_us.html %}"
+          >ABOUT US
+          <div class="underline"></div>
+        </a>
+
+        <a class="sidenav_link" href="{% link past_challenges.html %}"
+          >NEWS &amp; EVENTS
+          <div class="underline"></div>
+        </a>
+
         <a class="sidenav_link" href="{% link  mailing_list.html %}"
           >MAILING LIST
           <div class="underline"></div>
         </a>
-      </div>
-      <div class="sidenav_link">
-        <a class="sidenav_link" href="{% link past_challenges.html %}"
-          >NEWS &amp; EVENTS
-          <div class="underline"></div
-        ></a>
-      </div>
     </div>
   </div>
 </header>

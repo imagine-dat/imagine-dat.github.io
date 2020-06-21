@@ -8,11 +8,10 @@
     background-color: $clr-white;
     overflow-x: hidden;
     transition: 0.5s;
-    text-align: right;
     white-space: nowrap;
     padding-top: 0.5em;
 
-    a {
+    .sidenv_logo {
       float: left;
       .logo {
         padding: 0.5em;
@@ -24,58 +23,20 @@
       padding-top: 3em;
       display: block;
 
-      .sidenav_link {
+        .sidenav_link {
 
-        margin: 0.3em;
-        padding: 1em;
-        width: 30%;
-
-        &__guide{
-          text-decoration: none;
           color: $clr-gray-40;
-          font-size: 0.8em;
+          font-size: 1em;
           letter-spacing: 2px;
-          padding: 0 0.8em;
-
-          .underline {
-            height: 8px;
-            z-index: 0;
-            width: 7em;
-            background-color: transparent;
-            margin: -15px 0 0 1em;
-          }
-          &:hover {
-
-            .underline {
-              background-color: $clr-lime;
-            }
-          }
-
-        }
-        &__past{
           text-decoration: none;
-          color: $clr-gray-40;
-          font-size: 0.8em;
-          letter-spacing: 2px;
-          padding: 0 0.8em;
+          margin: 1em;
+          padding-bottom: 1em;
 
-          .underline {
-            height: 8px;
-            z-index: 0;
-            width: 7em;
-            background-color: transparent;
-            margin: -15px 0 0 1em;
-          }
           &:hover {
-
-            .underline {
-              background-color: $clr-lime;
-            }
+            color: $clr-eggplant;
           }
-
+          
         }
-        
-      }
     }
 }
 
