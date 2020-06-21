@@ -1,4 +1,6 @@
 .content {
+  margin-bottom: 100px;
+
   .divider {
     height: 15px;
     background-color: $clr-mint;
@@ -13,7 +15,12 @@
   }
 
   .title {
+    text-decoration: none;
     padding: 1.5em;
+
+    &:hover {
+      background-color: $clr-gray-95;
+    }
 
     h3 {
       color: black;
@@ -49,6 +56,15 @@
 
     .expanded_answer {
       padding: 1.5em 0;
+    }
+
+    .founders_image {
+      margin-top: 1em;
+      width: 70%;
+
+      @media (max-width: $phone-horizontal-width) {
+        width: 100%;
+      }
     }
 
   }
